@@ -3,18 +3,39 @@ angular.module('Test.controllers', [])
 
 .controller('AppCtrl', function($scope) {
 })
-
-.controller('PlaylistsCtrl', function($scope) {
+.controller('ForecastCtrl', function($scope) {
   $scope.forecast = [
-    { name: 'Past', items: 1 },
-    { name: 'Today', items: 1 },
-    { name: 'Thu', items: 1 },
-    { name: 'Fri', items: 1 },
-    { name: 'Sat', items: 1 },
-    { name: 'Sun', items: 1 },
-    { name: 'Future', items: 1 }
+    {
+      name: 'Past',
+      items: ['Item 1', 'Item 2', 'Item 3']
+    },
+    {
+      name: 'Today',
+      items: ['Item 1', 'Item 2']
+    },
+    {
+      name: 'Fri',
+      items: ['Item 1', 'Item 2', 'Item 3']
+    },
+    {
+      name: 'Sat',
+      items: ['Item 1']
+    },
+    {
+      name: 'Sun',
+      items: []
+    },
+    {
+      name: 'Mon',
+      items: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
+    },
+    {
+      name: 'Future',
+      items: ['Item 1', 'Item 2', 'Item 3', 'Item 4']
+    }
   ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.selectedDay = $scope.forecast[1];
+  $scope.setSelectedDay = function(day) {
+    $scope.selectedDay = day;
+  };
 });

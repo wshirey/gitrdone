@@ -9,19 +9,52 @@
 
   <ion-side-menu side="left">
     <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
+      <h1 class="title">Menu</h1>
     </header>
     <ion-content class="has-header">
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/settings">
-          Settings
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/sync">
-          Sync
-        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/forecast" class="item item-icon-left" id="forecast">
+          <i class="icon ion-ios7-partlysunny"></i>
+          <span class="title">Forecast</span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/inbox" class="item item-icon-left" id="inbox">
+          <i class="icon ion-android-inbox"></i>
+          <span class="title">Inbox</span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/flagged" class="item item-icon-left" id="flagged">
+          <i class="icon ion-flag"></i>
+          <span class="title">Flagged</span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/projects" class="item item-icon-left" id="projects">
+          <span class="row">
+            <i class="icon ion-folder"></i>
+            <span class="title">Projects</span>
+          </span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/nearby" class="item item-icon-left" id="nearby">
+          <span class="row">
+            <i class="icon ion-ios7-navigate"></i>
+            <span class="title">Nearby</span>
+          </span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/contexts" class="item item-icon-left" id="contexts">
+          <span class="row">
+            <i class="icon ion-at"></i>
+            <span class="title">Contexts</span>
+          </span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/perspectives" class="item item-icon-left" id="perspectives">
+          <span class="row">
+            <i class="icon ion-ios7-glasses"></i>
+            <span class="title">Perspectives</span>
+          </span>
+        </ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/settings" class="item item-icon-left" id="settings">
+          <span class="row">
+            <i class="icon ion-ios7-gear"></i>
+            <span class="title">Settings</span>
+          </span>
+        </ion-item nav-clear menu-close>
       </ion-list>
     </ion-content>
   </ion-side-menu>

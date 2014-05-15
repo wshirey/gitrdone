@@ -25,44 +25,72 @@ angular.module('Test', ['ionic', 'Test.controllers'])
       templateUrl: 'templates/menu.html',
       controller: 'AppCtrl'
     })
-
-    .state('app.search', {
-      url: '/search',
+    .state('app.forecast', {
+      url: '/forecast',
       views: {
         'menuContent' :{
-          templateUrl: 'templates/search.html'
+          templateUrl: 'templates/forecast.html',
+          controller: 'ForecastCtrl'
         }
       }
     })
-
-    .state('app.browse', {
-      url: '/browse',
+    .state('app.inbox', {
+      url: '/inbox',
       views: {
         'menuContent' :{
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/inbox.html'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.flagged', {
+      url: '/flagged',
       views: {
         'menuContent' :{
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/flagged.html'
         }
       }
     })
-
-    .state('app.single', {
-      url: '/playlists/:playlistId',
+    .state('app.projects', {
+      url: '/projects',
       views: {
         'menuContent' :{
-          templateUrl: 'templates/playlist.html',
-          controller: 'PlaylistCtrl'
+          templateUrl: 'templates/projects.html'
+        }
+      }
+    })
+    .state('app.nearby', {
+      url: '/nearby',
+      views: {
+        'menuContent' :{
+          templateUrl: 'templates/nearby.html'
+        }
+      }
+    })
+    .state('app.contexts', {
+      url: '/contexts',
+      views: {
+        'menuContent' :{
+          templateUrl: 'templates/contexts.html'
+        }
+      }
+    })
+    .state('app.perspectives', {
+      url: '/perspectives',
+      views: {
+        'menuContent' :{
+          templateUrl: 'templates/perspectives.html'
+        }
+      }
+    })
+    .state('app.settings', {
+      url: '/settings',
+      views: {
+        'menuContent' :{
+          templateUrl: 'templates/settings.html'
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/forecast');
 });
 
