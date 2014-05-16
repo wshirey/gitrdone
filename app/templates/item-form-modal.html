@@ -1,0 +1,17 @@
+<div class="modal" ng-controller="ItemFormModalCtrl">
+  <ion-header-bar>
+    <button class="button button-clear" ng-click="close()">Cancel</button>
+    <button class="button button-clear" ng-click="save()">Save</button>
+  </ion-header-bar>
+  <ion-content>
+    <label class="item item-input">
+      <input type="text" placeholder="Untitled Item" ng-model="item.name">
+    </label>
+    <div class="item">Project</div>
+    <div class="item">Context</div>
+    <div class="item">Flag</div>
+    <div class="item">Defer Until</div>
+    <div class="item">Due</div>
+    <div class="item">Repeat</div>
+  </ion-content>
+</div>

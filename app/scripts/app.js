@@ -6,7 +6,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('Test', ['ionic', 'Test.controllers'])
+angular.module('Test', ['ionic', 'Test.controllers', 'Test.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
